@@ -37,10 +37,10 @@ ParsedAPI.prototype.parse = function(url) {
 
   return axios
     .get(_url, config)
-    .then(response => {
+    .then(function(response) {
       return response.data;
     })
-    .catch(error => {
+    .catch(function(error) {
       return error;
     });
 };
